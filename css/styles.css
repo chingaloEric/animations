@@ -49,6 +49,31 @@
 	animation-timing-function: cubic-bezier(0.1, 0.3, 0.7, 1);
 }
 
+.animation-5{
+	height: 100px;
+	width: 100px;
+	background-color: purple;
+	animation-name: circulate;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+:checked ~.animation-5{
+	animation-play-state: running;
+}
+
+@keyframes circulate{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 @keyframes resize{
 	0%{
 		height: 100px;
