@@ -1,0 +1,56 @@
+body{
+	text-align: center;
+}
+
+.animation-1{
+	margin: 10% auto;
+	height: 100px;
+	width: 100px;
+	background: #c4c4cb;
+	animation-name: spin;
+	animation-duration: 0.1s;
+}
+
+.animation-container{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.animation-2{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #c4c4cb;
+
+}
+
+@keyframes spin{
+	/*from{
+		transform: rotate(0deg);
+		width: 100px;
+	}
+	to{
+		transform: rotate(360deg);
+		width: 20px;
+	}*/
+
+	0%{
+		transform: rotate(0deg);
+		width: 100px;
+		height: 100px
+	}
+
+	50%{
+		transform: rotate(180deg);
+		height: 50px;
+		width: 50px;
+	}
+
+	100%{
+		transform: rotate(360deg);
+		height: 100px;
+		width: 100px;
+	}
+}
