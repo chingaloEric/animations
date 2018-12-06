@@ -21,6 +21,7 @@
 	background-color: #c4c4cb;
 	animation-name: translate;
 	animation-duration: 2s;
+	animation-iteration-count: infinite;
 }
 @keyframes translate{
 	0%, 100%{
